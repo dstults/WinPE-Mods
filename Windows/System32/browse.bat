@@ -1,1 +1,0 @@
-start %windir%\..\MyApps\IceDragon\icedragon.exe
