@@ -1,0 +1,1 @@
+start %windir%\..\MyApps\PuTTy\putty.exe

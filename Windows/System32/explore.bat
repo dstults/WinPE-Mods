@@ -1,0 +1,1 @@
+start %windir%\..\MyApps\Explorer++\Explorer++.exe

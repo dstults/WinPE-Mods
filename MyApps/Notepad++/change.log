@@ -1,0 +1,34 @@
+Notepad++ v7.6.4 new features and bug-fixes:
+
+1.  Add Markdown in zip packages and fix Markdown not working in installer package of v7.6.3.
+2.  Switch from certificate verification to hashes verification due to "Notepad++" is rejected by certification authority:
+    https://notepad-plus-plus.org/news/notepad-7.6.4-released.html
+3.  Enhance User Defined Language System for supporting more than one UDL file. New behaviour:
+    https://notepad-plus-plus.org/community/topic/17072/new-enhancement-for-user-defined-language-system
+4.  Add "Remove Consecutive Duplicate Lines" feature to remove duplicate consecutive lines from whole document.
+5.  Add new shortcut "shift + scroll" for horizontal scrolling.
+6.  Add Stack Overflow as search engine.
+7.  Add the capacity to rename non-existing document's tab.
+8.  Fixed file open hang issue in old style mode.
+9.  Fix "Find in files" tab translation issue on initial dialog call.
+10. Fixed macro playback junk characters display issue on Find dialog.
+11. Ensure each recorded command is playable before playing to avoid exploit in hacking. (EURO-FOSSA)
+12. Enhance "Search on Internet" command to avoid command hijacked. (EURO-FOSSA)
+13. Fix buffer overrun in Print dialog. (EURO-FOSSA)
+14. Load nppPluginList.dll as resource instead of binary for the sake of security. (EURO-FOSSA)
+15. Check Updater's authenticity before its each launch to prevent from hijacking. (EURO-FOSSA)
+16. Fix stack buffer overflow in WordStyle dialog. (EURO-FOSSA)
+17. Fix stack buffer overflow issue on User Define Language dialog. (EURO-FOSSA)
+18. Prevent eventual DLL hijacking while loading plugins. (EURO-FOSSA) 
+
+
+Included plugins:
+
+1.  NppExport v0.2.8 (32-bit x86 only)
+2.  Converter 4.2.1
+3.  Mime Tool 2.5
+
+
+Updater (Installer only):
+
+* WinGup (for Notepad++) v5.1

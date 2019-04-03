@@ -1,0 +1,1 @@
+start %windir%\..\MyApps\7-Zip\7zFM.exe
