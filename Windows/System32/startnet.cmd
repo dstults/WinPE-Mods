@@ -8,6 +8,7 @@ echo netstat /a /n
 echo.
 echo Custom Batch Shortcuts:
 echo netset / netcustom (netsh) / netdummy
+echo lab1*
 echo shutdown / restart (wpeutil)
 echo.
 echo Custom Applications:

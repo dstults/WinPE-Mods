@@ -8,17 +8,6 @@
 	echo not working I'll tell you why!
 	echo =================================
 	echo.
-:Phase0
-	set myPhase=Phase0
-	echo Checking for admin privileges...
-	net file 1>nul 2>nul
-	if %errorlevel% == 2 goto Phase0NotAdmin
-	goto Phase1
-:Phase0NotAdmin
-	set myPhase=Phase0b
-	echo You are not admin!
-	echo You must run the command prompt as administrator.
-	goto Failure
 :Phase1
 	set myPhase=Phase1
 	echo Enabling Ethernet interface . . .
