@@ -1,6 +1,6 @@
 @echo off
 
-echo Naming ethernet interface and enabling admin
+echo Enabling ethernet if there is one (in case it was disabled)
 netsh interface set interface name ="Ethernet" admin=enable >nul
 if %errorlevel% neq 0 goto Error_Exit
 
@@ -16,8 +16,8 @@ echo Setting IP address to %ipAddy%, mask to %subMask%, default gateway to %gate
 netsh interface ipv4 set address "Ethernet" static %ipAddy& %subMask% %gateway% >nul
 if %errorlevel% neq 0 goto Error_Exit
 
-set /p dns1=" - DNS, Primary (nothing for 168.156.192.44): "
-if "%dns1%"=="" (set dns1="168.156.192.44")
+set /p dns1=" - DNS, Primary (nothing for 192.168.154.44): "
+if "%dns1%"=="" (set dns1="192.168.154.44")
 echo Assigning primary DNS server to %dns1%
 netsh interface ipv4 add dnsserver "Ethernet" address=%dns1% index=1 >nul
 if %errorlevel% neq 0 goto Error_Exit
