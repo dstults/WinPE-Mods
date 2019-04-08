@@ -1,9 +1,10 @@
 @echo off
 
-echo Enabling ethernet if there is one (in case it was disabled)
+echo Attempting to enable ethernet adapter if there is one (in case it was disabled?)
 netsh interface set interface name ="Ethernet" admin=enable >nul
-if %errorlevel% neq 0 goto Error_Exit
-
+rem if %errorlevel% neq 0 goto Error_Exit
+echo That probably failed and that's normal...
+echo.
 echo Custom Static IPv4 Setup -
 set /p ipAddy=" - IP Address (nothing for 192.168.154.132): "
 if "%ipAddy%"=="" (set ipAddy="192.168.154.132")
